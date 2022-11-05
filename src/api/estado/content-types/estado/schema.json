@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "estados",
+  "info": {
+    "singularName": "estado",
+    "pluralName": "estados",
+    "displayName": "estado"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nombreEstado": {
+      "type": "string"
+    },
+    "personal": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::personal.personal",
+      "mappedBy": "estado"
+    }
+  }
+}

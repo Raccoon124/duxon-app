@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tipo_personals",
+  "info": {
+    "singularName": "tipo-personal",
+    "pluralName": "tipo-personals",
+    "displayName": "tipoPersonal"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "tipoPersonal": {
+      "type": "string"
+    },
+    "personal": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::personal.personal",
+      "mappedBy": "tipo_personal"
+    }
+  }
+}

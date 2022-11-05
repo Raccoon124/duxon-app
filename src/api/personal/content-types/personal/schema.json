@@ -1,0 +1,109 @@
+{
+  "kind": "collectionType",
+  "collectionName": "personals",
+  "info": {
+    "singularName": "personal",
+    "pluralName": "personals",
+    "displayName": "Personal",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nombre": {
+      "type": "string"
+    },
+    "apellidoPaterno": {
+      "type": "string"
+    },
+    "apellidoMaterno": {
+      "type": "string"
+    },
+    "fechaIngreso": {
+      "type": "date"
+    },
+    "status": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::status.status",
+      "inversedBy": "personal"
+    },
+    "fechaBaja": {
+      "type": "date"
+    },
+    "tipo_personal": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::tipo-personal.tipo-personal",
+      "inversedBy": "personal"
+    },
+    "sexo": {
+      "type": "string"
+    },
+    "puestoCategoria": {
+      "type": "string"
+    },
+    "turno": {
+      "type": "string"
+    },
+    "numSeguroSocial": {
+      "type": "string"
+    },
+    "lugarNacimiento": {
+      "type": "string"
+    },
+    "fechaNacimiento": {
+      "type": "date"
+    },
+    "curp": {
+      "type": "string"
+    },
+    "rfc": {
+      "type": "string"
+    },
+    "nivelEstudios": {
+      "type": "string"
+    },
+    "clabeInterbancaria": {
+      "type": "string"
+    },
+    "banco": {
+      "type": "string"
+    },
+    "tieneInfonavit": {
+      "type": "boolean"
+    },
+    "contratoDeterminado1": {
+      "type": "richtext"
+    },
+    "contratoDeterminado2": {
+      "type": "richtext"
+    },
+    "numeroTelefono": {
+      "type": "string"
+    },
+    "direccion": {
+      "type": "string"
+    },
+    "observaciones": {
+      "type": "richtext"
+    },
+    "altaImss": {
+      "type": "boolean"
+    },
+    "fechaAltaImss": {
+      "type": "date"
+    },
+    "anosLaborando": {
+      "type": "integer"
+    },
+    "estado": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::estado.estado",
+      "inversedBy": "personal"
+    }
+  }
+}
